@@ -140,7 +140,7 @@ def worker_bing(query, ua):
 				parsing(r.text, method="bing")
 			except Exception as e: print("Bing Error 2 => ", e)
 
-def dork_searcher(file_in, threads, cleaning=False):
+def dork_searcher(file_in, threads):
 	q = load_file(file_in, return_queue=True)
 
 	for _ in range(threads):
@@ -152,6 +152,9 @@ def dork_searcher(file_in, threads, cleaning=False):
 
 if __name__ == '__main__':
 	from sys import argv
+	if len(argv) < 2:
+		print("Usage: %s file_in.txt file_out.txt threads")
+		exit()
 	global file_out
 	file_out = argv[2]
 	dork_searcher(argv[1], int(argv[3]))
