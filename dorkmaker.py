@@ -67,7 +67,7 @@ def dork_maker(keys_file, file_out, max_dork, method_domain):
 if __name__ =='__main__':
 	from sys import argv
 	if len(argv) < 2:
-		print("Usage %s keys.txt file_out.txt 50000 manual")
+		print("Usage %s keys.txt file_out.txt 50000 manual" % argv[0])
 		exit()
 	method_domain= "manual" if argv[4] else ""
 	dork_maker(argv[1], argv[2], int(argv[3]), method_domain)

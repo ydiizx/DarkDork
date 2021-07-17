@@ -153,7 +153,7 @@ def dork_searcher(file_in, threads):
 if __name__ == '__main__':
 	from sys import argv
 	if len(argv) < 2:
-		print("Usage: %s file_in.txt file_out.txt threads")
+		print("Usage: %s file_in.txt file_out.txt threads" % argv[0])
 		exit()
 	global file_out
 	file_out = argv[2]
