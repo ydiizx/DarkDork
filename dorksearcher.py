@@ -52,8 +52,7 @@ class Worker(threading.Thread):
 				break
 			ua = {'User-Agents': choice(USER_AGENTS)}
 			if not self.proxy and not proxer.empty:
-				while not self.proxy:
-					self.proxy = check_proxy(proxer.get)
+				self.proxy = check_proxy(proxer.get)
 
 			if proxer.empty and not self.proxy:
 				self.proxy = dict(http="socks5://127.0.0.1:9050", https="socks5://127.0.0.1:9050")
@@ -62,9 +61,7 @@ class Worker(threading.Thread):
 			p2 = self.bing(t, ua, self.proxy)
 
 			if (not proxer.empty and (p1 == 0 or p2 == 0)):
-				self.proxy = None
-				while not self.proxy:
-					self.proxy = check_proxy(proxer.get)
+				self.proxy = check_proxy(proxer.get)
 
 			self.q.task_done()
 
@@ -76,7 +73,7 @@ def check_proxy(prox):
 			return prox
 		except requests.exceptions.Timeout:
 			return False
-
+		except requests.exceptions.ConnectionError: return False
 	return False
 
 def check_link(link):

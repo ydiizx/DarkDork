@@ -11,7 +11,6 @@ dorktypes = [
         '{SF} "{DE}" + "{KW}"',
         '{SF}{KW}{PF}?{PT}= site:{DE}',
         '{SF}{PT}={KW}{PF}? site:{DE}',
-        '{PT}= "{KW}" + "{DE}"',
         '{SF}{KW}{PF}?{PT}= site:{DE}',
         '{SF}{PT}={KW}{PF}? site:{DE}'
         ]
@@ -33,8 +32,7 @@ def dork_maker(keys_file, file_out, max_dork, method_domain):
 	if method_domain == 'manual':
 		domains = input("Enter your domain (separate with comma (,)) : ").split(",")
 	else:
-		f2 = open("Enter manual file or using default: ",)
-
+		domains = default_domain_extensions.split()
 	data_dict = {
 	"DE": domains,
 	"PT": page_types.split(),
