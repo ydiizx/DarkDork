@@ -11,6 +11,33 @@ USER_AGENTS = requests.get("https://gist.githubusercontent.com/pzb/b4b6f57144aea
 TOP_DOMAIN = "|".join(requests.get("https://gist.githubusercontent.com/jgamblin/62fadd8aa321f7f6a482912a6a317ea3/raw/36EkRHLyviZMtSjodB4gByQJwyYxPmBE1x/urls.txt").text.split("\n"))
 YAHOO_URL = "https://search.yahoo.com/search?p="
 BING_URL = "https://www.bing.com/search?q="
+CHECK_PROXY_URL = "https://api.ipify.org"
+
+class AutoProxy():
+	def __init__(self, proxy_type="socks4", timeout=10000, city="all"):
+		self.proxy_type = proxy_type
+		self.link = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=%s&timeout=%s&country=%s" % (proxy_type, str(timeout), city)
+		self.onload = False
+		self.proxy = []
+
+	def load(self):
+		if not self.onload:
+			self.proxy = [requests.get(self.link).text.split("")]
+		else:
+			return
+
+	@property
+	def get(self):
+		try:
+			prox = self.proxy_type + "://" + self.proxy.pop()
+			return dict(http=prox, https=prox)
+		except Empty:
+			print("Wait loading new proxy")
+			self.load()
+			self.onload = True
+			return None
+
+proxer = AutoProxy()
 
 class Worker(threading.Thread):
 	def __init__(self, q, bing, yahoo, *args, **kwargs):
@@ -26,9 +53,21 @@ class Worker(threading.Thread):
 			except queue.Empty:
 				break
 			ua = {'User-Agents': choice(USER_AGENTS)}
-			self.yahoo(t, ua)
-			self.bing(t, ua)
+			prox = None
+
+			while not prox:
+				prox = check_proxy(proxer.get)
+
+			self.yahoo(t, ua, prox)
+			self.bing(t, ua, prox)
 			self.q.task_done()
+
+def check_proxy(prox):
+	try:
+		requests.get(CHECK_PROXY_URL, proxies=prox)
+		return prox
+	except:
+		return False
 
 def check_link(link):
 	if re.findall(TOP_DOMAIN, link):
@@ -48,10 +87,10 @@ def load_file(file_in, return_queue=False):
 	f.close()
 	return q
 
-def worker_yahoo(query, ua):
+def worker_yahoo(query, ua, prox):
 	pages = None
 	try:
-		r = requests.get(YAHOO_URL+query, headers=ua)
+		r = requests.get(YAHOO_URL+query, headers=ua, proxies=proxy)
 		if r.status_code == 500:
 			print("Got blocked error!!")
 			return
@@ -65,7 +104,7 @@ def worker_yahoo(query, ua):
 	if pages:
 		for page in pages:
 			try:
-				r = requests.get(page, headers=ua).text
+				r = requests.get(page, headers=ua, proxies=proxy).text
 				parsing_yahoo(r, method='yahoo')
 			except:
 				continue
@@ -81,7 +120,8 @@ def parsing(resp=None, first=False, method=None):
 			try:
 				pages = [x.attrs['href'] for x in soup.find('div', attrs={'class': 'pages'}).find_all('a')]
 			except Exception as e:
-				print(" error method yahoo:", e)
+				
+				# print(" error method yahoo:", e)
 				pass
 		for link in hrefs:
 			link = link.attrs['href']
@@ -119,21 +159,23 @@ def parsing(resp=None, first=False, method=None):
 	if pages:
 		return pages
 
-def worker_bing(query, ua):
+def worker_bing(query, ua, proxy):
 	bing_url = BING_URL + query
 	next_page = None
 	try:
-		r = requests.get(bing_url, headers=ua)
+		r = requests.get(bing_url, headers=ua, proxies=proxy)
 		if r.status_code == 500:
 			print("Gots blocked from bing...")
 			return
 		next_page = parsing(r.text, first=True, method="bing")
+	except requests.exceptions.Timeout:
+		return False
 	except Exception as e:
 		print("BIng Error => ", e)
 	if next_page:
 		for i in next_page:
 			try:
-				r = requests.get(bing_url+i, headers=ua)
+				r = requests.get(bing_url+i, headers=ua, proxies=proxy)
 				if r.status_code == 500:
 					print("Gots blocked from bing...")
 					return
