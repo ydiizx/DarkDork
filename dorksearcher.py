@@ -17,33 +17,31 @@ class AutoProxy():
 	def __init__(self, proxy_type="socks4", timeout=10000, city="all"):
 		self.proxy_type = proxy_type
 		self.link = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=%s&timeout=%s&country=%s" % (proxy_type, str(timeout), city)
-		self.onload = False
+		self.empty = False
 		self.proxy = []
 
 	def load(self):
-		if not self.onload:
-			self.proxy = [requests.get(self.link).text.split("")]
-		else:
-			return
+		print("Loading proxy")
+		self.proxy = requests.get(self.link).text.split()
+		print("DONE")
 
 	@property
 	def get(self):
+		if not self.proxy:
+			return dict(http="socks5://127.0.0.1:9050", https="socks5://127.0.0.1:9050") # default proxychains
 		try:
 			prox = self.proxy_type + "://" + self.proxy.pop()
 			return dict(http=prox, https=prox)
-		except Empty:
-			print("Wait loading new proxy")
-			self.load()
-			self.onload = True
-			return None
-
-proxer = AutoProxy()
+		except IndexError:
+			self.empty = True
+			return False
 
 class Worker(threading.Thread):
 	def __init__(self, q, bing, yahoo, *args, **kwargs):
 		self.q = q
 		self.yahoo = yahoo
 		self.bing = bing
+		self.proxy = None
 		super().__init__(*args, **kwargs)
 
 	def run(self):
@@ -53,21 +51,33 @@ class Worker(threading.Thread):
 			except queue.Empty:
 				break
 			ua = {'User-Agents': choice(USER_AGENTS)}
-			prox = None
+			if not self.proxy and not proxer.empty:
+				while not self.proxy:
+					self.proxy = check_proxy(proxer.get)
 
-			while not prox:
-				prox = check_proxy(proxer.get)
+			if proxer.empty and not self.proxy:
+				self.proxy = dict(http="socks5://127.0.0.1:9050", https="socks5://127.0.0.1:9050")
 
-			self.yahoo(t, ua, prox)
-			self.bing(t, ua, prox)
+			p1 = self.yahoo(t, ua, self.proxy)
+			p2 = self.bing(t, ua, self.proxy)
+
+			if (not proxer.empty and (p1 == 0 or p2 == 0)):
+				self.proxy = None
+				while not self.proxy:
+					self.proxy = check_proxy(proxer.get)
+
 			self.q.task_done()
 
 def check_proxy(prox):
-	try:
-		requests.get(CHECK_PROXY_URL, proxies=prox)
-		return prox
-	except:
-		return False
+	if prox:
+		try:
+			gt = requests.get(CHECK_PROXY_URL, proxies=prox)
+			print("LIVE :",gt.text)
+			return prox
+		except requests.exceptions.Timeout:
+			return False
+
+	return False
 
 def check_link(link):
 	if re.findall(TOP_DOMAIN, link):
@@ -94,6 +104,8 @@ def worker_yahoo(query, ua, prox):
 		if r.status_code == 500:
 			print("Got blocked error!!")
 			return
+	except IOError:
+		return 0
 	except:
 		return
 	try:
@@ -168,6 +180,8 @@ def worker_bing(query, ua, proxy):
 			print("Gots blocked from bing...")
 			return
 		next_page = parsing(r.text, first=True, method="bing")
+	except IOError:
+		return 0
 	except requests.exceptions.Timeout:
 		return False
 	except Exception as e:
@@ -199,4 +213,6 @@ if __name__ == '__main__':
 		exit()
 	global file_out
 	file_out = argv[2]
+	proxer = AutoProxy()
+	proxer.load()
 	dork_searcher(argv[1], int(argv[3]))
