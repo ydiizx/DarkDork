@@ -43,17 +43,28 @@ def dork_maker(keys_file, file_out, max_dork, method_domain):
 
 	result = set()
 
-	while len(result) < max_dork:
-		dork_type = choice(dorktypes)
-		dork_type2 = worker_helper(dork_type)
+	if max_dork:
+		while len(result) < max_dork:
+			dork_type = choice(dorktypes)
+			dork_type2 = worker_helper(dork_type)
 
-		for KW in data_dict['KW']:
-			for DE in data_dict['DE']:
+			for KW in data_dict['KW']:
+				for DE in data_dict['DE']:
 
-				temp_dict = dict(KW=KW, DE=DE)
-				for x in dork_type2:
-					temp_dict[x] = choice(data_dict[x])
-				result.add(dork_type.format(**temp_dict))
+					temp_dict = dict(KW=KW, DE=DE)
+					for x in dork_type2:
+						temp_dict[x] = choice(data_dict[x])
+					result.add(dork_type.format(**temp_dict))
+	else:
+		for dork_type in dorktypes:
+			dork_type2 = worker_helper(dork_type)
+
+			for KW in data_dict['KW']:
+				for DE in data_dict['DE']:
+					temp_dict = dict(KW=KW, DE=DE)
+					for x in dork_type2:
+						temp_dict[x] = choice(data_dict[x])
+					result.add(dork_type.format(**temp_dict))
 
 	f = open(file_out , 'w', encoding='utf-8', errors='surrogateescape')
 	for i in result: f.write(i+'\n')
