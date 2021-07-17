@@ -1,0 +1,2 @@
+https://www.solvenius.de/wp-content/plugins/formcraft3/assets/js/src/mysqli.php?XSS=06a18E15aDcc84&logoff=1
+https://www.hartmann-brockhaus.de/downloads/bestellformular_hartmann-brockhaus.pdf?1626388697

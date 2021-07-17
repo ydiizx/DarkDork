@@ -11,37 +11,29 @@ USER_AGENTS = requests.get("https://gist.githubusercontent.com/pzb/b4b6f57144aea
 TOP_DOMAIN = "|".join(requests.get("https://gist.githubusercontent.com/jgamblin/62fadd8aa321f7f6a482912a6a317ea3/raw/36EkRHLyviZMtSjodB4gByQJwyYxPmBE1x/urls.txt").text.split("\n"))
 YAHOO_URL = "https://search.yahoo.com/search?p="
 BING_URL = "https://www.bing.com/search?q="
-CHECK_PROXY_URL = "https://api.ipify.org"
 
 class AutoProxy():
 	def __init__(self, proxy_type="socks4", timeout=10000, city="all"):
 		self.proxy_type = proxy_type
 		self.link = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=%s&timeout=%s&country=%s" % (proxy_type, str(timeout), city)
-		self.empty = False
 		self.proxy = []
 
 	def load(self):
-		print("Loading proxy")
 		self.proxy = requests.get(self.link).text.split()
-		print("DONE")
 
 	@property
 	def get(self):
-		if not self.proxy:
-			return dict(http="socks5://127.0.0.1:9050", https="socks5://127.0.0.1:9050") # default proxychains
 		try:
 			prox = self.proxy_type + "://" + self.proxy.pop()
 			return dict(http=prox, https=prox)
-		except IndexError:
-			self.empty = True
-			return False
+		except Empty:
+			return dict(http="socks5://127.0.0.1:9005", https="socks5://127.0.0.1:9005")
 
 class Worker(threading.Thread):
 	def __init__(self, q, bing, yahoo, *args, **kwargs):
 		self.q = q
 		self.yahoo = yahoo
 		self.bing = bing
-		self.proxy = None
 		super().__init__(*args, **kwargs)
 
 	def run(self):
@@ -51,30 +43,9 @@ class Worker(threading.Thread):
 			except queue.Empty:
 				break
 			ua = {'User-Agents': choice(USER_AGENTS)}
-			if not self.proxy and not proxer.empty:
-				self.proxy = check_proxy(proxer.get)
-
-			if proxer.empty and not self.proxy:
-				self.proxy = dict(http="socks5://127.0.0.1:9050", https="socks5://127.0.0.1:9050")
-
-			p1 = self.yahoo(t, ua, self.proxy)
-			p2 = self.bing(t, ua, self.proxy)
-
-			if (not proxer.empty and (p1 == 0 or p2 == 0)):
-				self.proxy = check_proxy(proxer.get)
-
+			self.yahoo(t, ua)
+			# self.bing(t, ua)
 			self.q.task_done()
-
-def check_proxy(prox):
-	if prox:
-		try:
-			gt = requests.get(CHECK_PROXY_URL, proxies=prox)
-			print("LIVE :",gt.text)
-			return prox
-		except requests.exceptions.Timeout:
-			return False
-		except requests.exceptions.ConnectionError: return False
-	return False
 
 def check_link(link):
 	if re.findall(TOP_DOMAIN, link):
@@ -94,17 +65,20 @@ def load_file(file_in, return_queue=False):
 	f.close()
 	return q
 
-def worker_yahoo(query, ua, prox):
+def worker_yahoo(query, ua):
 	pages = None
-	try:
-		r = requests.get(YAHOO_URL+query, headers=ua, proxies=proxy)
-		if r.status_code == 500:
-			print("Got blocked error!!")
-			return
-	except IOError:
-		return 0
-	except:
-		return
+	while True:
+		try:
+			prox = proxer.get
+			print("Trying proxies", prox['http'])
+			r = requests.get(YAHOO_URL+query, headers=ua, proxies=prox)
+			if r.status_code == 500:
+				print("Got blocked error!!")
+				return
+			break
+		except Exception as e:
+			print(e)
+			continue
 	try:
 		pages = parsing(r.text, first=True, method='yahoo')
 	except Exception as e:
@@ -113,7 +87,7 @@ def worker_yahoo(query, ua, prox):
 	if pages:
 		for page in pages:
 			try:
-				r = requests.get(page, headers=ua, proxies=proxy).text
+				r = requests.get(page, headers=ua).text
 				parsing_yahoo(r, method='yahoo')
 			except:
 				continue
@@ -168,25 +142,21 @@ def parsing(resp=None, first=False, method=None):
 	if pages:
 		return pages
 
-def worker_bing(query, ua, proxy):
+def worker_bing(query, ua):
 	bing_url = BING_URL + query
 	next_page = None
 	try:
-		r = requests.get(bing_url, headers=ua, proxies=proxy)
+		r = requests.get(bing_url, headers=ua)
 		if r.status_code == 500:
 			print("Gots blocked from bing...")
 			return
 		next_page = parsing(r.text, first=True, method="bing")
-	except IOError:
-		return 0
-	except requests.exceptions.Timeout:
-		return False
 	except Exception as e:
 		print("BIng Error => ", e)
 	if next_page:
 		for i in next_page:
 			try:
-				r = requests.get(bing_url+i, headers=ua, proxies=proxy)
+				r = requests.get(bing_url+i, headers=ua)
 				if r.status_code == 500:
 					print("Gots blocked from bing...")
 					return
