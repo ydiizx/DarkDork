@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from random import choice
 from urllib.parse import urlparse
+from os import system, name
 
 import re
 import threading
@@ -9,7 +10,7 @@ import requests
 import time
 
 print("Wait getting user agents..")
-PROXYLINK = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4&timeout=80&country=all&simplified=true"
+PROXYLINK = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=%s&timeout=%s&country=all&simplified=true"
 YAHOO_URL = "https://search.yahoo.com/search?p="
 BING_URL = "https://www.bing.com/search?q="
 USER_AGENTS = list()
@@ -23,12 +24,23 @@ with open('topdomain.txt', 'r') as f:
 
 q_proxy = queue.Queue()
 onload = False
+prox_type = ['socks4', 'socks5', 'https']
+errors = 0
+valid = 0
+valid_trash = 0
+clear = "clear" if name == "posix" else "cls"
+
+def display():
+	system(clear)
+	print("{:^50}".format("VALID : " + str(valid)))
+	print("{:^50}".format("FAILED : " + str(errors)))
+	print("{:^50}".format("VALID TRASH : " + str(valid_trash)))
 
 def load_prox(ids):
 	global q_proxy
 	print("Reloading on ", ids)
-	for x in requests.get(PROXYLINK).text.split(): q_proxy.put_nowait(dict(http="socks4://"+x, https="socks4://"+x))
-	# print("Get proxy")
+	for p_type in prox_type:
+		for x in requests.get(PROXYLINK % (p_type, "100")).text.split(): q_proxy.put_nowait(dict(http=p_type+"://"+x, https=p_type+"://"+x))
 
 class Worker(threading.Thread):
 	def __init__(self, q, yahoo, ids,	 *args, **kwargs):
@@ -42,6 +54,7 @@ class Worker(threading.Thread):
 	def run(self):
 		global onload
 		global q_proxy
+		global errors
 
 		while True:
 			try:
@@ -72,8 +85,12 @@ class Worker(threading.Thread):
 			while not a:
 				a = self.yahoo(t, ua, prox)
 				if a == None:
-					print("Failed Proxy", prox['http'])
-			# self.bing(t, ua)
+					errors += 1
+					try:
+						a = q_proxy.get(timeout=2)
+					except queue.Empty:
+						break
+			display()
 			self.q.task_done()
 
 def check_link(link):
@@ -96,7 +113,6 @@ def load_file(file_in, return_queue=False):
 
 def worker_yahoo(query, ua, prox):
 	pages = None
-	# while True:
 	r = None
 	try:
 		r = requests.get(YAHOO_URL+query, headers=ua, proxies=prox, timeout=10)
@@ -131,6 +147,9 @@ def worker_yahoo(query, ua, prox):
 	return 1
 
 def parsing(resp=None, first=False, method=None):
+	global valid_trash
+	global valid
+
 	pages = None
 	soup = BeautifulSoup(resp, 'html.parser')
 	
@@ -150,8 +169,10 @@ def parsing(resp=None, first=False, method=None):
 			# print("From yahoo => ")
 			if urlparse(link).query:
 				f = open(file_out, 'a')
+				valid += 1
 			else:
 				f = open(file_out_trash, 'a')
+				valid_trash += 1
 			
 			f.write(link+'\n')
 			f.close()
