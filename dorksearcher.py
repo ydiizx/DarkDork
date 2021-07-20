@@ -28,13 +28,16 @@ prox_type = ['socks4', 'socks5', 'https']
 errors = 0
 valid = 0
 valid_trash = 0
+total_dork = 0
+dork_usage = 0
 clear = "clear" if name == "posix" else "cls"
 
 def display():
 	system(clear)
-	print("{:^50}".format("VALID : " + str(valid)))
-	print("{:^50}".format("FAILED : " + str(errors)))
-	print("{:^50}".format("VALID TRASH : " + str(valid_trash)))
+	print("DORK USAGE : ", dork_usage, "/", total_dork)
+	print("VALID : ", valid)
+	print("FAILED : ", errors)
+	print("VALID TRASH : ", valid_trash)
 
 def load_prox(ids):
 	global q_proxy
@@ -55,6 +58,7 @@ class Worker(threading.Thread):
 		global onload
 		global q_proxy
 		global errors
+		global dork_usage
 
 		while True:
 			try:
@@ -77,6 +81,7 @@ class Worker(threading.Thread):
 						continue
 			try:
 				t = self.q.get(timeout=2)
+				dork_usage += 1
 			except queue.Empty:
 				break
 
@@ -99,11 +104,14 @@ def check_link(link):
 	return False
 
 def load_file(file_in, return_queue=False):
+	global total_dork
 	f = open(file_in, 'r', encoding='utf-8', errors='surrogateescape')
 	
 	if return_queue:
 		q = queue.Queue()
-		for x in f.readlines(): q.put_nowait(x.strip())
+		for x in f.readlines():
+			total_dork += 1
+			q.put_nowait(x.strip())
 	else:
 		q = list()
 		for x in f.readlines(): q.append(x.strip())
