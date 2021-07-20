@@ -61,9 +61,11 @@ class Worker(threading.Thread):
 		global dork_usage
 
 		while True:
+			prox = None
 			try:
 				prox = q_proxy.get(timeout=2)
 			except queue.Empty:
+				print("Empty")
 				with self._lock:
 					if not onload:
 						time.sleep(1)
@@ -79,6 +81,11 @@ class Worker(threading.Thread):
 						self._event.set()
 						# print("Done Waiting")
 						continue
+			except Exception as e:
+				print(e)
+
+			if not prox:
+				continue
 			try:
 				t = self.q.get(timeout=2)
 				dork_usage += 1
