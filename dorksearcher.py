@@ -1,49 +1,78 @@
 from bs4 import BeautifulSoup
 from random import choice
+from urllib.parse import urlparse
 
 import re
 import threading
 import queue
 import requests
+import time
 
 print("Wait getting user agents..")
-USER_AGENTS = requests.get("https://gist.githubusercontent.com/pzb/b4b6f57144aea7827ae4/raw/cf847b76a1GvzmW4PDo92bw6KoGSzTuynHTPJRVpHL6/user-agents.txt").text.split("\n")
-TOP_DOMAIN = "|".join(requests.get("https://gist.githubusercontent.com/jgamblin/62fadd8aa321f7f6a482912a6a317ea3/raw/36EkRHLyviZMtSjodB4gByQJwyYxPmBE1x/urls.txt").text.split("\n"))
+PROXYLINK = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4&timeout=80&country=all&simplified=true"
 YAHOO_URL = "https://search.yahoo.com/search?p="
 BING_URL = "https://www.bing.com/search?q="
+USER_AGENTS = list()
+TOP_DOMAIN = list()
 
-class AutoProxy():
-	def __init__(self, proxy_type="socks4", timeout=10000, city="all"):
-		self.proxy_type = proxy_type
-		self.link = "https://api.proxyscrape.com/v2/?request=getproxies&protocol=%s&timeout=%s&country=%s" % (proxy_type, str(timeout), city)
-		self.proxy = []
+with open('user-agents.txt', 'r') as f:
+	USER_AGENTS = [x.strip() for x in f.readlines()]
 
-	def load(self):
-		self.proxy = requests.get(self.link).text.split()
+with open('topdomain.txt', 'r') as f:
+	TOP_DOMAIN = "|".join([x.strip() for x in f.readlines()])
 
-	@property
-	def get(self):
-		try:
-			prox = self.proxy_type + "://" + self.proxy.pop()
-			return dict(http=prox, https=prox)
-		except Empty:
-			return dict(http="socks5://127.0.0.1:9005", https="socks5://127.0.0.1:9005")
+q_proxy = queue.Queue()
+onload = False
+
+def load_prox(ids):
+	global q_proxy
+	print("Reloading on ", ids)
+	for x in requests.get(PROXYLINK).text.split(): q_proxy.put_nowait(dict(http="socks4://"+x, https="socks4://"+x))
+	# print("Get proxy")
 
 class Worker(threading.Thread):
-	def __init__(self, q, bing, yahoo, *args, **kwargs):
+	def __init__(self, q, yahoo, ids,	 *args, **kwargs):
 		self.q = q
 		self.yahoo = yahoo
-		self.bing = bing
+		self.ids = ids
 		super().__init__(*args, **kwargs)
+		self._lock = threading.Lock()
+		self._event = threading.Event()
 
 	def run(self):
+		global onload
+		global q_proxy
+
 		while True:
+			try:
+				prox = q_proxy.get(timeout=2)
+			except queue.Empty:
+				with self._lock:
+					if not onload:
+						time.sleep(1)
+						if not onload:
+							onload = True
+							# print("onload = ", onload, "ids = ", self.ids)
+							load_prox(self.ids)
+							onload = False
+					else:
+						self._event.clear()
+						# print("Waiting ", onload, "ids : ", self.ids)
+						self._event.wait(5.0)
+						self._event.set()
+						# print("Done Waiting")
+						continue
 			try:
 				t = self.q.get(timeout=2)
 			except queue.Empty:
 				break
+
 			ua = {'User-Agents': choice(USER_AGENTS)}
-			self.yahoo(t, ua)
+			a = None
+			while not a:
+				a = self.yahoo(t, ua, prox)
+				if a == None:
+					print("Failed Proxy", prox['http'])
 			# self.bing(t, ua)
 			self.q.task_done()
 
@@ -65,20 +94,28 @@ def load_file(file_in, return_queue=False):
 	f.close()
 	return q
 
-def worker_yahoo(query, ua):
+def worker_yahoo(query, ua, prox):
 	pages = None
-	while True:
-		try:
-			prox = proxer.get
-			print("Trying proxies", prox['http'])
-			r = requests.get(YAHOO_URL+query, headers=ua, proxies=prox)
-			if r.status_code == 500:
-				print("Got blocked error!!")
-				return
-			break
-		except Exception as e:
-			print(e)
-			continue
+	# while True:
+	r = None
+	try:
+		r = requests.get(YAHOO_URL+query, headers=ua, proxies=prox, timeout=10)
+		if r.status_code == 500:
+			print("Got blocked error!!")
+			return
+
+	except Exception as e:
+		# print(e)
+		return None
+		# continue
+	except requests.exceptions.RequestException:
+		return None
+	except requests.exceptions.ConnectionError:
+		return
+
+	if not r:
+		return
+	
 	try:
 		pages = parsing(r.text, first=True, method='yahoo')
 	except Exception as e:
@@ -91,7 +128,7 @@ def worker_yahoo(query, ua):
 				parsing_yahoo(r, method='yahoo')
 			except:
 				continue
-	return 0
+	return 1
 
 def parsing(resp=None, first=False, method=None):
 	pages = None
@@ -110,8 +147,12 @@ def parsing(resp=None, first=False, method=None):
 			link = link.attrs['href']
 			if check_link(link):
 				continue
-			print("From yahoo => ", link)
-			f = open(file_out, 'a')
+			# print("From yahoo => ")
+			if urlparse(link).query:
+				f = open(file_out, 'a')
+			else:
+				f = open(file_out_trash, 'a')
+			
 			f.write(link+'\n')
 			f.close()
 
@@ -166,11 +207,10 @@ def worker_bing(query, ua):
 def dork_searcher(file_in, threads):
 	q = load_file(file_in, return_queue=True)
 
-	for _ in range(threads):
-		Worker(q, worker_bing, worker_yahoo).start()
+	for i in range(threads):
+		Worker(q, worker_yahoo, i).start()
 
 	q.join()
-
 	print("DONE")
 
 if __name__ == '__main__':
@@ -179,7 +219,12 @@ if __name__ == '__main__':
 		print("Usage: %s file_in.txt file_out.txt threads" % argv[0])
 		exit()
 	global file_out
+	global file_out_trash
+
 	file_out = argv[2]
-	proxer = AutoProxy()
-	proxer.load()
+	if "/" in file_out:
+		file_out_trash = "/".join(file_out.split("/")[:-1]) + "/" + 'trash_'+file_out.split("/")[-1]
+	else:
+		file_out_trash = 'trash_' + file_out
+	load_prox(0)
 	dork_searcher(argv[1], int(argv[3]))
