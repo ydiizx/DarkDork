@@ -39,11 +39,16 @@ def display():
 	print("FAILED : ", errors)
 	print("VALID TRASH : ", valid_trash)
 
-def load_prox(ids):
+def load_prox(ids, proxy_chains=False):
 	global q_proxy
 	print("Reloading on ", ids)
-	for p_type in prox_type:
-		for x in requests.get(PROXYLINK % (p_type, "100")).text.split(): q_proxy.put_nowait(dict(http=p_type+"://"+x, https=p_type+"://"+x))
+	if proxy_chains:
+		temp_proxy = dict(http="socks5://127.0.0.1:9050", https="socks5://127.0.0.1:9050")
+		for p_type in prox_type:
+			for x in requests.get(PROXYLINK % (p_type, "7000"), proxies=temp_proxy).text.split(): q_proxy.put_nowait(dict(http=p_type+"://"+x, https=p_type+"://"+x))
+	else:
+		for p_type in prox_type:
+			for x in requests.get(PROXYLINK % (p_type, "7000")).text.split(): q_proxy.put_nowait(dict(http=p_type+"://"+x, https=p_type+"://"+x))
 
 class Worker(threading.Thread):
 	def __init__(self, q, yahoo, ids,	 *args, **kwargs):
