@@ -1,0 +1,10 @@
+MAIL: romehn7209@seznam.cz, HOST: smtp.seznam.cz, PORT: 587, USER: romehn7209@seznam.cz, PASS: 12turbo12
+MAIL: elaine.hutchman@ntlworld.com, HOST: smtp.ntlworld.com, PORT: 465, USER: elaine.hutchman@ntlworld.com, PASS: rainbow1
+MAIL: rhianmair.williams@virgin.net, HOST: smtp.virgin.net, PORT: 465, USER: rhianmair.williams@virgin.net, PASS: r1h2i3a4n5
+MAIL: sal.woodland@virgin.net, HOST: smtp.virgin.net, PORT: 465, USER: sal.woodland@virgin.net, PASS: Deborah1
+MAIL: geola@garagedoormails.com, HOST: mail.garagedoormails.com, PORT: 465, USER: geola@garagedoormails.com, PASS: rYJ7M2s3
+MAIL: hexter@seznam.cz, HOST: smtp.seznam.cz, PORT: 587, USER: hexter@seznam.cz, PASS: 737437982
+MAIL: christine.considine@virgin.net, HOST: smtp.virgin.net, PORT: 465, USER: christine.considine@virgin.net, PASS: Orangepen4
+MAIL: p.bergamin@sunrise.ch, HOST: smtp2.sunrise.ch, PORT: 465, USER: p.bergamin@sunrise.ch, PASS: melina02*
+MAIL: tomaskolis123@seznam.cz, HOST: smtp.seznam.cz, PORT: 587, USER: tomaskolis123@seznam.cz, PASS: kecalok
+MAIL: lukas.nandahar@seznam.cz, HOST: smtp.seznam.cz, PORT: 587, USER: lukas.nandahar@seznam.cz, PASS: sakul91

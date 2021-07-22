@@ -1,0 +1,2 @@
+EMAIL: vincent@honrodt.com, HOST: mx03.secure-mailgate.com, PORT: 465, USER: vincent, PASS: benjamin72benjamiq11$
+EMAIL: vincent@honrodt.com, HOST: mx03.secure-mailgate.com, PORT: 465, USER: vincent@honrodt.com, PASS: benjamin72benjamiqg&

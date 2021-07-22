@@ -1,0 +1,1 @@
+EMAIL: p.bergamin@sunrise.ch, HOST: smtp2.sunrise.ch, PORT: 465, USER: p.bergamin@sunrise.ch, PASS: melina02*

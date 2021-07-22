@@ -1,0 +1,1 @@
+EMAIL: geola@garagedoormails.com, HOST: mail.garagedoormails.com, PORT: 465, USER: geola@garagedoormails.com, PASS: rYJ7M2s3
