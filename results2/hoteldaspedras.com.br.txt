@@ -1,0 +1,1 @@
+EMAIL: ametista@hoteldaspedras.com.br, HOST: hoteldaspedras.com.br, PORT: 465, USER: ametista, PASS: hotel2008

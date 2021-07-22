@@ -1,0 +1,3 @@
+EMAIL: grandrapidsff@tharaldson.com, HOST: mxpool1.spamgateway.comodo.com, PORT: 465, USER: grandrapidsff@tharaldson.com, PASS: tony123
+EMAIL: flintrisales@tharaldson.com, HOST: mxpool1.spamgateway.comodo.com, PORT: 465, USER: flintrisales@tharaldson.com, PASS: simone
+EMAIL: sugyan.beura@pinc.co.in, HOST: mxpool1.spamgateway.comodo.com, PORT: 465, USER: sugyan.beura, PASS: SWATI123

@@ -1,0 +1,1 @@
+EMAIL: janice.cheung@innoform.com, HOST: mail.innoform.com, PORT: 465, USER: janice.cheung, PASS: 61980805

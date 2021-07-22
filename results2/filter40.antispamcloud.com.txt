@@ -1,0 +1,3 @@
+EMAIL: glenda@hifraser.com, HOST: filter40.antispamcloud.com, PORT: 587, USER: glenda@hifraser.com, PASS: 162005
+EMAIL: ftarczy@computan.on.ca, HOST: filter40.antispamcloud.com, PORT: 587, USER: ftarczy, PASS: password
+EMAIL: deerhunter@scotserve.co.uk, HOST: filter40.antispamcloud.com, PORT: 587, USER: deerhunter, PASS: montybkrobertlorena_persano

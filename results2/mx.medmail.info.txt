@@ -1,0 +1,1 @@
+EMAIL: skwilbert@medmail.info, HOST: mx.medmail.info, PORT: 587, USER: skwilbert@medmail.info, PASS: WF0pTw0681

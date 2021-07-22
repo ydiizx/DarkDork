@@ -1,0 +1,1 @@
+EMAIL: a.charbonnier@nievre.cci.fr, HOST: mx03.altinea.fr, PORT: 465, USER: a.charbonnier@nievre.cci.fr, PASS: demo

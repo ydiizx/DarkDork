@@ -1,0 +1,2 @@
+EMAIL: jude@klria972.com, HOST: mx1.mschosting.com, PORT: 465, USER: jude@klria972.com, PASS: 111111
+EMAIL: fauzi@avromedical.com, HOST: mx1.mschosting.com, PORT: 465, USER: fauzi@avromedical.com, PASS: algbumal

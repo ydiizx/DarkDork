@@ -1,0 +1,1 @@
+EMAIL: gentryveronica@sbcglobe.net, HOST: mail.sbcglobe.net, PORT: 587, USER: gentryveronica@sbcglobe.net, PASS: musick

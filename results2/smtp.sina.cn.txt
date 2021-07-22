@@ -1,0 +1,9 @@
+EMAIL: txguoguo828@sina.cn, HOST: smtp.sina.cn, PORT: 587, USER: txguoguo828@sina.cn, PASS: tx89057097
+EMAIL: yangt52188@sina.cn, HOST: smtp.sina.cn, PORT: 587, USER: yangt52188@sina.cn, PASS: yt19870725
+EMAIL: zhangxiaoran0725@sina.cn, HOST: smtp.sina.cn, PORT: 587, USER: zhangxiaoran0725@sina.cn, PASS: beijing19870725
+EMAIL: fantasy21dan@sina.cn, HOST: smtp.sina.cn, PORT: 587, USER: fantasy21dan@sina.cn, PASS: 19870322wo
+EMAIL: liuxz404@sina.cn, HOST: smtp.sina.cn, PORT: 587, USER: liuxz404@sina.cn, PASS: zhangjian2
+EMAIL: majuxing@sina.cn, HOST: smtp.sina.cn, PORT: 587, USER: majuxing@sina.cn, PASS: majuxing929
+EMAIL: yinxiao0113@sina.cn, HOST: smtp.sina.cn, PORT: 587, USER: yinxiao0113@sina.cn, PASS: xiaoxiao198613
+EMAIL: a174037@sina.cn, HOST: smtp.sina.cn, PORT: 587, USER: a174037@sina.cn, PASS: a19851202
+EMAIL: qq57252545@sina.cn, HOST: smtp.sina.cn, PORT: 587, USER: qq57252545@sina.cn, PASS: 6561219z

@@ -1,0 +1,5 @@
+EMAIL: 07226347@zjnu.net, HOST: mxhm.qiye.163.com, PORT: 465, USER: 07226347@zjnu.net, PASS: 3.141592
+EMAIL: dingzhihui@mail.nankai.edu.cn, HOST: mxhm.qiye.163.com, PORT: 465, USER: dingzhihui@mail.nankai.edu.cn, PASS: 520148
+EMAIL: liuyb958@nenu.edu.cn, HOST: mxhm.qiye.163.com, PORT: 465, USER: liuyb958@nenu.edu.cn, PASS: 5211314521y
+EMAIL: anyx972@nenu.edu.cn, HOST: mxhm.qiye.163.com, PORT: 465, USER: anyx972@nenu.edu.cn, PASS: ayx6930337
+EMAIL: tangl112@nenu.edu.cn, HOST: mxhm.qiye.163.com, PORT: 465, USER: tangl112@nenu.edu.cn, PASS: tangl813

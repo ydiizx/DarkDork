@@ -1,0 +1,2 @@
+EMAIL: bopsdweplezed@cvportal.net, HOST: mx.cvportal.net, PORT: 587, USER: bopsdweplezed@cvportal.net, PASS: 4XS8ILBU
+EMAIL: nearagreema@cvportal.net, HOST: mx.cvportal.net, PORT: 587, USER: nearagreema@cvportal.net, PASS: RR8CrG6249

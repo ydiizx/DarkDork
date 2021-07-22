@@ -1,0 +1,3 @@
+EMAIL: ahmet@erkanmakina.com.tr, HOST: mx01.vargonen.net, PORT: 465, USER: ahmet@erkanmakina.com.tr, PASS: arda2005
+EMAIL: hkilic@novateknoloji.com, HOST: mx01.vargonen.net, PORT: 465, USER: hkilic@novateknoloji.com, PASS: ozan0902
+EMAIL: bahattin.tuncer@pulsar.com.tr, HOST: mx01.vargonen.net, PORT: 465, USER: bahattin.tuncer, PASS: pulsarbaha

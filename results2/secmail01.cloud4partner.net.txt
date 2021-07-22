@@ -1,0 +1,1 @@
+EMAIL: mail@pcservice-simon.de, HOST: secmail01.cloud4partner.net, PORT: 465, USER: mail@pcservice-simon.de, PASS: internet

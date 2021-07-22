@@ -1,0 +1,2 @@
+EMAIL: teile@schorn.fsoc.de, HOST: mxsgg01.abcpartner.de, PORT: 465, USER: teile@schorn.fsoc.de, PASS: 24064
+EMAIL: abluemel@rsmobile.fsoc.de, HOST: mxsgg01.abcpartner.de, PORT: 465, USER: abluemel@rsmobile.fsoc.de, PASS: MA18895ES

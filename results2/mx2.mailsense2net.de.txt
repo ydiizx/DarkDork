@@ -1,0 +1,1 @@
+EMAIL: pierre.schwahn@altmann-industrietechnik.de, HOST: mx2.mailsense2net.de, PORT: 465, USER: pierre.schwahn@altmann-industrietechnik.de, PASS: jancker

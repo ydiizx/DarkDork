@@ -1,0 +1,1 @@
+EMAIL: richard@twyford-berkshire.co.uk, HOST: ghost.mxroute.com, PORT: 465, USER: richard, PASS: sensei

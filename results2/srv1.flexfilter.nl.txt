@@ -1,0 +1,1 @@
+EMAIL: d.meeder@cxt.nl, HOST: srv1.flexfilter.nl, PORT: 465, USER: d.meeder@cxt.nl, PASS: dorine55

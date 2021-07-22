@@ -1,0 +1,9 @@
+EMAIL: irenel@crwly.com, HOST: mx3.mtaroutes.com, PORT: 587, USER: irenel@crwly.com, PASS: 528452761443751
+EMAIL: kelly@cpsuk.com, HOST: mx3.mtaroutes.com, PORT: 587, USER: kelly@cpsuk.com, PASS: super123
+EMAIL: wjc@planer.co.uk, HOST: mx3.mtaroutes.com, PORT: 587, USER: wjc@planer.co.uk, PASS: 221156
+EMAIL: peter.lowe@taylor-ch.co.uk, HOST: mx3.mtaroutes.com, PORT: 587, USER: peter.lowe, PASS: EARTH
+EMAIL: eric.lightfoot@dfalaw.co.uk, HOST: mx3.mtaroutes.com, PORT: 587, USER: eric.lightfoot@dfalaw.co.uk, PASS: penfold
+EMAIL: robin@fashionpersonnel.co.uk, HOST: mx3.mtaroutes.com, PORT: 587, USER: robin@fashionpersonnel.co.uk, PASS: fashion
+EMAIL: Ikelly@g-s.co.uk, HOST: mx3.mtaroutes.com, PORT: 587, USER: Ikelly, PASS: Fionagail2
+EMAIL: mbarnes@rosipower.com, HOST: mx3.mtaroutes.com, PORT: 587, USER: mbarnes, PASS: 2565317
+EMAIL: lynda@badger-publishing.co.uk, HOST: mx3.mtaroutes.com, PORT: 587, USER: lynda@badger-publishing.co.uk, PASS: karian

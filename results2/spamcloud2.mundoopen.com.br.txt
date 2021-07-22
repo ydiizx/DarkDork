@@ -1,0 +1,1 @@
+EMAIL: rodrigo@pluriservicos.com.br, HOST: spamcloud2.mundoopen.com.br, PORT: 465, USER: rodrigo@pluriservicos.com.br, PASS: 150580

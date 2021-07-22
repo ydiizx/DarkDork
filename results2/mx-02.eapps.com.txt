@@ -1,0 +1,1 @@
+EMAIL: gareth@hlstudios.co.uk, HOST: mx-02.eapps.com, PORT: 465, USER: gareth@hlstudios.co.uk, PASS: recqfyqb

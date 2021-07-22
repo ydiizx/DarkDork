@@ -1,0 +1,1 @@
+EMAIL: charlesholden@eurofly.co.uk, HOST: dummy0.junkemailfilter.com, PORT: 465, USER: charlesholden@eurofly.co.uk, PASS: meathead

@@ -1,0 +1,1 @@
+EMAIL: dan@aibsolutions.co.uk, HOST: hsscan.hostingsystems.co.uk, PORT: 465, USER: dan, PASS: bigboy

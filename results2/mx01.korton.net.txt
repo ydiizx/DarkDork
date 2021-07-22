@@ -1,0 +1,1 @@
+EMAIL: rick@enrico.co.uk, HOST: mx01.korton.net, PORT: 465, USER: rick, PASS: humberyork69

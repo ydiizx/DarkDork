@@ -1,0 +1,1 @@
+EMAIL: tankov@ipnet.ua, HOST: mail.ipnet.ua, PORT: 587, USER: tankov@ipnet.ua, PASS: 061176

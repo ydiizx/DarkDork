@@ -1,0 +1,1 @@
+EMAIL: janik@dausendschoen.de, HOST: mail.humorverwaltung.de, PORT: 465, USER: janik@dausendschoen.de, PASS: kicker09

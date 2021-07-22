@@ -1,0 +1,11 @@
+EMAIL: andrew.lee@laratech.co.uk, HOST: mx4.mtaroutes.com, PORT: 587, USER: andrew.lee@laratech.co.uk, PASS: jammer
+EMAIL: HumphreysG@orvad.com.au, HOST: mx4.mtaroutes.com, PORT: 587, USER: HumphreysG@orvad.com.au, PASS: Breeana1
+EMAIL: rwarner@crowfinance.com, HOST: mx4.mtaroutes.com, PORT: 587, USER: rwarner, PASS: stratfor
+EMAIL: dina.caira@bigpartnership.co.uk, HOST: mx4.mtaroutes.com, PORT: 587, USER: dina.caira@bigpartnership.co.uk, PASS: wmajin_bkrumpet
+EMAIL: mary.riall@uftoncourt.co.uk, HOST: mx4.mtaroutes.com, PORT: 587, USER: mary.riall@uftoncourt.co.uk, PASS: tealeaf
+EMAIL: ajohnson@videcon.co.uk, HOST: mx4.mtaroutes.com, PORT: 587, USER: ajohnson@videcon.co.uk, PASS: videconplc
+EMAIL: ddillon@tasmeats.com.au, HOST: mx4.mtaroutes.com, PORT: 587, USER: ddillon@tasmeats.com.au, PASS: 791198660615230
+EMAIL: AdrianM@ljhkatherine.com.au, HOST: mx4.mtaroutes.com, PORT: 587, USER: AdrianM@ljhkatherine.com.au, PASS: hooker01
+EMAIL: louise@bbailey.co.uk, HOST: mx4.mtaroutes.com, PORT: 587, USER: louise@bbailey.co.uk, PASS: louise
+EMAIL: jsheridan@rockbridge.net, HOST: mx4.mtaroutes.com, PORT: 587, USER: jsheridan@rockbridge.net, PASS: jms527481
+EMAIL: dave.lynch@candlelight.co.uk, HOST: mx4.mtaroutes.com, PORT: 587, USER: dave.lynch@candlelight.co.uk, PASS: dkz6tcss

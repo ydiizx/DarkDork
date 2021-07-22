@@ -1,0 +1,11 @@
+EMAIL: philipagric@connectfree.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: philipagric@connectfree.co.uk, PASS: turtle2
+EMAIL: stockysteve@connectfree.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: stockysteve, PASS: fishing
+EMAIL: smithac@connectfree.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: smithac@connectfree.co.uk, PASS: starfury
+EMAIL: 10.12.02@connectfree.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: 10.12.02@connectfree.co.uk, PASS: potwasher
+EMAIL: kiranshah@connectfree.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: kiranshah@connectfree.co.uk, PASS: 1media
+EMAIL: simon.meyer@smartemail.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: simon.meyer@smartemail.co.uk, PASS: yamwr250f
+EMAIL: enes@connectfree.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: enes@connectfree.co.uk, PASS: silly1
+EMAIL: 3jobs@connectfree.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: 3jobs, PASS: kylirlai_8cruz_90201
+EMAIL: bgreen@connectfree.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: bgreen@connectfree.co.uk, PASS: thunder1
+EMAIL: vampire@connectfree.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: vampire, PASS: vampire
+EMAIL: nickscarfe@connectfree.co.uk, HOST: fallbackmx.hyperslice.net, PORT: 465, USER: nickscarfe@connectfree.co.uk, PASS: 501x4avl

@@ -1,0 +1,8 @@
+EMAIL: cwork@house-of-cats.co.uk, HOST: mx.supanames.co.uk, PORT: 587, USER: cwork, PASS: 47500gw
+EMAIL: tom@motorcademusic.net, HOST: mx.supanames.co.uk, PORT: 587, USER: tom, PASS: 10291724
+EMAIL: clickshop@camera98.co.uk, HOST: mx.supanames.co.uk, PORT: 587, USER: clickshop, PASS: ca169786
+EMAIL: svp@darkfire.co.uk, HOST: mx.supanames.co.uk, PORT: 587, USER: svp, PASS: darkfire
+EMAIL: peter@microscopical.co.uk, HOST: mx.supanames.co.uk, PORT: 587, USER: peter, PASS: cbhadbfa
+EMAIL: booking@atlascabs.co.uk, HOST: mx.supanames.co.uk, PORT: 587, USER: booking, PASS: mbfsfh
+EMAIL: genny@allmediaworks.co.uk, HOST: mx.supanames.co.uk, PORT: 587, USER: genny, PASS: vn5933
+EMAIL: justin@jjbeales.com, HOST: mx.supanames.co.uk, PORT: 587, USER: justin, PASS: 24865338

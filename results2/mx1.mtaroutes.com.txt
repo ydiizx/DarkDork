@@ -1,0 +1,12 @@
+EMAIL: scott.theakstone@tsheating.co.uk, HOST: mx1.mtaroutes.com, PORT: 587, USER: scott.theakstone, PASS: london12
+EMAIL: PVanDeHey@thehsgroup.com, HOST: mx1.mtaroutes.com, PORT: 587, USER: PVanDeHey@thehsgroup.com, PASS: p4j26v
+EMAIL: support@ventrus.co.uk, HOST: mx1.mtaroutes.com, PORT: 587, USER: support@ventrus.co.uk, PASS: siege113
+EMAIL: ddoll@vaughnhockey.com, HOST: mx1.mtaroutes.com, PORT: 587, USER: ddoll@vaughnhockey.com, PASS: connor
+EMAIL: jsmith@rbicompany.com, HOST: mx1.mtaroutes.com, PORT: 587, USER: jsmith@rbicompany.com, PASS: teanie
+EMAIL: margaret.smith@comfortex.co.uk, HOST: mx1.mtaroutes.com, PORT: 587, USER: margaret.smith, PASS: COMF1950
+EMAIL: joanne@apmonline.co.uk, HOST: mx1.mtaroutes.com, PORT: 587, USER: joanne@apmonline.co.uk, PASS: Nicegirl
+EMAIL: june@newflame.co.uk, HOST: mx1.mtaroutes.com, PORT: 587, USER: june@newflame.co.uk, PASS: cosworth
+EMAIL: cwavimbukie@telinet.com.pg, HOST: mx1.mtaroutes.com, PORT: 587, USER: cwavimbukie@telinet.com.pg, PASS: koroo90
+EMAIL: dave.lynch@candlelight.co.uk, HOST: mx1.mtaroutes.com, PORT: 587, USER: dave.lynch@candlelight.co.uk, PASS: dKz6tCss
+EMAIL: bgehres@flchamber.com, HOST: mx1.mtaroutes.com, PORT: 587, USER: bgehres, PASS: T2green
+EMAIL: jd@sidey.co.uk, HOST: mx1.mtaroutes.com, PORT: 587, USER: jd, PASS: 987654

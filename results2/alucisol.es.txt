@@ -1,0 +1,1 @@
+EMAIL: info@alucisol.es, HOST: alucisol.es, PORT: 465, USER: info, PASS: DARIONEREA

@@ -1,0 +1,1 @@
+EMAIL: isthatok@Deathmonkeighs.com, HOST: deathmonkeighs.com, PORT: 465, USER: isthatok, PASS: timeandspace

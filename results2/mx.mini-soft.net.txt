@@ -1,0 +1,1 @@
+EMAIL: dong@mini-soft.net, HOST: mx.mini-soft.net, PORT: 587, USER: dong@mini-soft.net, PASS: pickle20

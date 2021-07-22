@@ -1,0 +1,2 @@
+EMAIL: phaaq@yyou.co.uk, HOST: mail.yyou.co.uk, PORT: 587, USER: phaaq@yyou.co.uk, PASS: soffio
+EMAIL: pgomq@yyou.co.uk, HOST: mail.yyou.co.uk, PORT: 587, USER: pgomq@yyou.co.uk, PASS: e88888

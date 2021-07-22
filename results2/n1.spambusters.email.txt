@@ -1,0 +1,1 @@
+EMAIL: Bmd@bragatel.pt, HOST: n1.spambusters.email, PORT: 465, USER: Bmd@bragatel.pt, PASS: bmdlesi647

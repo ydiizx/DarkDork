@@ -1,0 +1,1 @@
+EMAIL: info@uttarakhandtourism.ind.in, HOST: mail.uttarakhandtourism.ind.in, PORT: 465, USER: info, PASS: infoHarharmahadev123

@@ -1,0 +1,2 @@
+EMAIL: singa@drivehq.com, HOST: mail.drivehq.com, PORT: 465, USER: singa@drivehq.com, PASS: selamatsoreabah
+EMAIL: soho6688@drivehq.com, HOST: mail.drivehq.com, PORT: 465, USER: soho6688@drivehq.com, PASS: Password123

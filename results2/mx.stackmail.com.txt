@@ -1,0 +1,5 @@
+EMAIL: muhasebe@neotechmedikal.com, HOST: mx.stackmail.com, PORT: 465, USER: muhasebe@neotechmedikal.com, PASS: Neotech2018
+EMAIL: info@framptonandbalding.com, HOST: mx.stackmail.com, PORT: 465, USER: info@framptonandbalding.com, PASS: 1loveJesus
+EMAIL: gary@2percentinspiration.com, HOST: mx.stackmail.com, PORT: 465, USER: gary@2percentinspiration.com, PASS: garych3llo
+EMAIL: charlene@garthysworld.com, HOST: mx.stackmail.com, PORT: 465, USER: charlene@garthysworld.com, PASS: newgarthys198
+EMAIL: adam@bonjourmonkey.co.uk, HOST: mx.stackmail.com, PORT: 465, USER: adam@bonjourmonkey.co.uk, PASS: Wiltshire6259!

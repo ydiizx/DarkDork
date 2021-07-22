@@ -1,0 +1,2 @@
+EMAIL: info@n-e-g.co.uk, HOST: mx1.hdcloud.co.uk, PORT: 465, USER: info@n-e-g.co.uk, PASS: fleetwood
+EMAIL: Rod@burrow-crowe.co.uk, HOST: mx1.hdcloud.co.uk, PORT: 465, USER: Rod, PASS: jullie

@@ -1,0 +1,1 @@
+EMAIL: khammes@nvcs.com, HOST: mail.nvcs.com, PORT: 465, USER: khammes, PASS: 531599576651365

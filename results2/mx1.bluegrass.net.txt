@@ -1,0 +1,1 @@
+EMAIL: dhermsen@bluegrass.net, HOST: mx1.bluegrass.net, PORT: 465, USER: dhermsen@bluegrass.net, PASS: zoeella

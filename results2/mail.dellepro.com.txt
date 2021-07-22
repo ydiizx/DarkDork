@@ -1,0 +1,1 @@
+EMAIL: dngrwil@dellepro.com, HOST: mail.dellepro.com, PORT: 587, USER: dngrwil@dellepro.com, PASS: bravada

@@ -1,0 +1,1 @@
+EMAIL: martin@system-leasing.co.uk, HOST: mail.system-leasing.co.uk, PORT: 587, USER: martin, PASS: jonathan

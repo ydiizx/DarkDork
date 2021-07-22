@@ -1,0 +1,1 @@
+EMAIL: anmada@uniserve.com, HOST: mx0.uniserve.com, PORT: 465, USER: anmada@uniserve.com, PASS: kapak

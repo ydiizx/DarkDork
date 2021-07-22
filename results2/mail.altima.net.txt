@@ -1,0 +1,2 @@
+EMAIL: jomic@altima.net, HOST: mail.altima.net, PORT: 465, USER: jomic@altima.net, PASS: 123456
+EMAIL: mrmon@altima.net, HOST: mail.altima.net, PORT: 465, USER: mrmon@altima.net, PASS: katsos

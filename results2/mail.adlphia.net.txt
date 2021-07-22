@@ -1,0 +1,1 @@
+EMAIL: campbell73@adlphia.net, HOST: mail.adlphia.net, PORT: 587, USER: campbell73@adlphia.net, PASS: marie1

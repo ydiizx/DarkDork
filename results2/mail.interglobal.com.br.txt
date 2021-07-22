@@ -1,0 +1,1 @@
+EMAIL: sergio@interglobal.com.br, HOST: mail.interglobal.com.br, PORT: 465, USER: sergio, PASS: st079701

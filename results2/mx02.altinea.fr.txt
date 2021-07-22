@@ -1,0 +1,3 @@
+EMAIL: ce0912.justine.genot@irts-fc.fr, HOST: mx02.altinea.fr, PORT: 465, USER: ce0912.justine.genot, PASS: Justine
+EMAIL: 2608letourneuranne@irts-fc.fr, HOST: mx02.altinea.fr, PORT: 465, USER: 2608letourneuranne@irts-fc.fr, PASS: Anne
+EMAIL: ce0912.gaetane.boche@irts-fc.fr, HOST: mx02.altinea.fr, PORT: 465, USER: ce0912.gaetane.boche@irts-fc.fr, PASS: Gaetane

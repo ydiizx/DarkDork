@@ -1,0 +1,2 @@
+EMAIL: steelfixer2@tisali.co.uk, HOST: mail.tisali.co.uk, PORT: 587, USER: steelfixer2@tisali.co.uk, PASS: zoeruth
+EMAIL: emind@tisali.co.uk, HOST: mail.tisali.co.uk, PORT: 587, USER: emind@tisali.co.uk, PASS: 01323509238

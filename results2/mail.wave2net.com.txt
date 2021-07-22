@@ -1,0 +1,1 @@
+EMAIL: judyemerson@wave2net.com, HOST: mail.wave2net.com, PORT: 465, USER: judyemerson, PASS: 877771837948459

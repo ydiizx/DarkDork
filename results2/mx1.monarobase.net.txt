@@ -1,0 +1,1 @@
+EMAIL: christ06@mx.fr, HOST: mx1.monarobase.net, PORT: 465, USER: christ06@mx.fr, PASS: vatajyzu

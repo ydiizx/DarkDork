@@ -1,0 +1,2 @@
+EMAIL: sdfds@asdfsa.com, HOST: mx01.5ax.org, PORT: 587, USER: sdfds@asdfsa.com, PASS: 640366169228134
+EMAIL: msilli@netbulmail.com, HOST: mx01.5ax.org, PORT: 587, USER: msilli@netbulmail.com, PASS: 195100

@@ -1,0 +1,1 @@
+EMAIL: dara@dndlaw.com, HOST: mx2-eu.mtaroutes.com, PORT: 587, USER: dara, PASS: DWATTERS

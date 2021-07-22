@@ -1,0 +1,6 @@
+EMAIL: david@onefourseven.co.uk, HOST: mx1.solardns.com, PORT: 465, USER: david@onefourseven.co.uk, PASS: 
+EMAIL: kristin.atkinson@jobtimise.co.uk, HOST: mx1.solardns.com, PORT: 465, USER: kristin.atkinson, PASS: russ3ll
+EMAIL: donna@doggiedaycareuk.co.uk, HOST: mx1.solardns.com, PORT: 465, USER: donna, PASS: SPRINGER
+EMAIL: helen.crute@newbusgrange.co.uk, HOST: mx1.solardns.com, PORT: 465, USER: helen.crute@newbusgrange.co.uk, PASS: tsb2148
+EMAIL: dspm@dmbrain.co.uk, HOST: mx1.solardns.com, PORT: 465, USER: dspm@dmbrain.co.uk, PASS: wywtashyhuh
+EMAIL: mindit@blueclouds.co.uk, HOST: mx1.solardns.com, PORT: 465, USER: mindit@blueclouds.co.uk, PASS: mindit10

@@ -1,0 +1,2 @@
+EMAIL: neszi23@kabelnet.hu, HOST: mail.kabelnet.hu, PORT: 465, USER: neszi23@kabelnet.hu, PASS: nagymama6
+EMAIL: gy.bogi@kabelnet.hu, HOST: mail.kabelnet.hu, PORT: 465, USER: gy.bogi@kabelnet.hu, PASS: remibota3

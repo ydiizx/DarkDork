@@ -1,0 +1,1 @@
+EMAIL: kubilay.dogan@adon.li, HOST: mx01.adon.li, PORT: 465, USER: kubilay.dogan@adon.li, PASS: timurdilara

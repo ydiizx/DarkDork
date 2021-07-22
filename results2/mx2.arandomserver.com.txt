@@ -1,0 +1,1 @@
+EMAIL: Bill@billfernandez.com, HOST: mx2.arandomserver.com, PORT: 465, USER: Bill@billfernandez.com, PASS: atsumarimashita

@@ -1,0 +1,1 @@
+EMAIL: Renata.Hertman@pl.mailgrs.com, HOST: pl.mailgrs.com, PORT: 465, USER: Renata.Hertman, PASS: 545788410844607

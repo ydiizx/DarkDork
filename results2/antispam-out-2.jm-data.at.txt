@@ -1,0 +1,2 @@
+EMAIL: daniel.joech@speeding.at, HOST: antispam-out-2.jm-data.at, PORT: 465, USER: daniel.joech, PASS: daniel
+EMAIL: gh.rettensteiner@oganet.at, HOST: antispam-out-2.jm-data.at, PORT: 465, USER: gh.rettensteiner@oganet.at, PASS: rettensteiner

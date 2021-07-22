@@ -1,0 +1,1 @@
+EMAIL: dg@iserp.net, HOST: mail.iserp.net, PORT: 465, USER: dg, PASS: arvnup

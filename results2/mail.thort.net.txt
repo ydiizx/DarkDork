@@ -1,0 +1,1 @@
+EMAIL: wayne@waynegoodman.co.uk, HOST: mail.thort.net, PORT: 465, USER: wayne@waynegoodman.co.uk, PASS: savag3h3nry

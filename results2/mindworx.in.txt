@@ -1,0 +1,1 @@
+EMAIL: pratik.s@mindworx.in, HOST: mindworx.in, PORT: 465, USER: pratik.s, PASS: nand@1873

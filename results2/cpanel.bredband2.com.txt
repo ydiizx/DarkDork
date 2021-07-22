@@ -1,0 +1,1 @@
+EMAIL: rosiko@bredband2.com, HOST: cpanel.bredband2.com, PORT: 465, USER: rosiko@bredband2.com, PASS: Pottrykt1!

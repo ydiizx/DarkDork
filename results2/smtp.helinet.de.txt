@@ -1,0 +1,1 @@
+EMAIL: oliver@ahlencom.de, HOST: smtp.helinet.de, PORT: 465, USER: oliver, PASS: 123321

@@ -1,0 +1,2 @@
+EMAIL: sumkin@fryazino.net, HOST: mail.fryazino.net, PORT: 587, USER: sumkin@fryazino.net, PASS: Biopsyhoz90
+EMAIL: super@fryazino.net, HOST: mail.fryazino.net, PORT: 587, USER: super@fryazino.net, PASS: 19847754q

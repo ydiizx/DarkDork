@@ -1,0 +1,3 @@
+EMAIL: 864d@5mail.in, HOST: mx.5mail.in, PORT: 587, USER: 864d@5mail.in, PASS: tester123
+EMAIL: tara@5mail.in, HOST: mx.5mail.in, PORT: 587, USER: tara@5mail.in, PASS: prince11
+EMAIL: ca4d@5mail.in, HOST: mx.5mail.in, PORT: 587, USER: ca4d@5mail.in, PASS: kante1

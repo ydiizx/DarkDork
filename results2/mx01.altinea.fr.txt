@@ -1,0 +1,3 @@
+EMAIL: ce0912.estelle.petitjean@irts-fc.fr, HOST: mx01.altinea.fr, PORT: 465, USER: ce0912.estelle.petitjean@irts-fc.fr, PASS: Estelle
+EMAIL: as0912.natacha.genot@irts-fc.fr, HOST: mx01.altinea.fr, PORT: 465, USER: as0912.natacha.genot, PASS: Natacha
+EMAIL: 2708rungeamelie@irts-fc.fr, HOST: mx01.altinea.fr, PORT: 465, USER: 2708rungeamelie@irts-fc.fr, PASS: Amelie
