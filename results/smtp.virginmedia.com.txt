@@ -1,1 +1,0 @@
-EMAIL: catriona21@virginmedia.com, HOST: smtp.virginmedia.com, PORT: 465, USER: catriona21@virginmedia.com, PASS: Catriona17

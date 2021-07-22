@@ -1,5 +1,0 @@
-EMAIL: rhianmair.williams@virgin.net, HOST: smtp.virgin.net, PORT: 465, USER: rhianmair.williams@virgin.net, PASS: r1h2i3a4n5
-EMAIL: sal.woodland@virgin.net, HOST: smtp.virgin.net, PORT: 465, USER: sal.woodland@virgin.net, PASS: Deborah1
-EMAIL: taffy.barnes1@virgin.net, HOST: smtp.virgin.net, PORT: 465, USER: taffy.barnes1@virgin.net, PASS: iceland1
-EMAIL: christine.considine@virgin.net, HOST: smtp.virgin.net, PORT: 465, USER: christine.considine@virgin.net, PASS: Orangepen4
-EMAIL: mistermp.holden2@virgin.net, HOST: smtp.virgin.net, PORT: 465, USER: mistermp.holden2@virgin.net, PASS: henry02

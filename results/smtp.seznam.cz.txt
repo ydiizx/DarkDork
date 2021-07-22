@@ -1,4 +1,0 @@
-EMAIL: romehn7209@seznam.cz, HOST: smtp.seznam.cz, PORT: 587, USER: romehn7209@seznam.cz, PASS: 12turbo12
-EMAIL: hexter@seznam.cz, HOST: smtp.seznam.cz, PORT: 587, USER: hexter@seznam.cz, PASS: 737437982
-EMAIL: tomaskolis123@seznam.cz, HOST: smtp.seznam.cz, PORT: 587, USER: tomaskolis123@seznam.cz, PASS: kecalok
-EMAIL: lukas.nandahar@seznam.cz, HOST: smtp.seznam.cz, PORT: 587, USER: lukas.nandahar@seznam.cz, PASS: sakul91
