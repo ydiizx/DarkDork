@@ -39,7 +39,7 @@ def display():
 	print("FAILED : ", errors)
 	print("VALID TRASH : ", valid_trash)
 
-def load_prox(ids, proxy_chains=False):
+def load_prox(ids, proxy_chains=True):
 	global q_proxy
 	print("Reloading on ", ids)
 	if proxy_chains:
@@ -118,7 +118,7 @@ def check_link(link):
 def load_file(file_in, return_queue=False):
 	global total_dork
 	f = open(file_in, 'r', encoding='utf-8', errors='surrogateescape')
-	
+
 	if return_queue:
 		q = queue.Queue()
 		for x in f.readlines():
@@ -151,7 +151,7 @@ def worker_yahoo(query, ua, prox):
 
 	if not r:
 		return
-	
+
 	try:
 		pages = parsing(r.text, first=True, method='yahoo')
 	except Exception as e:
@@ -172,14 +172,14 @@ def parsing(resp=None, first=False, method=None):
 
 	pages = None
 	soup = BeautifulSoup(resp, 'html.parser')
-	
+
 	if method == "yahoo":
 		hrefs = soup.find_all('a', attrs={'class': 'ac-algo'})
 		if first:
 			try:
 				pages = [x.attrs['href'] for x in soup.find('div', attrs={'class': 'pages'}).find_all('a')]
 			except Exception as e:
-				
+
 				# print(" error method yahoo:", e)
 				pass
 		for link in hrefs:
@@ -193,7 +193,7 @@ def parsing(resp=None, first=False, method=None):
 			else:
 				f = open(file_out_trash, 'a')
 				valid_trash += 1
-			
+
 			f.write(link+'\n')
 			f.close()
 
