@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from random import choice
 from urllib.parse import urlparse
 from os import system, name
+from treq import get
 
 import re
 import threading
@@ -135,7 +136,7 @@ def worker_yahoo(query, ua, prox):
 	pages = None
 	r = None
 	try:
-		r = requests.get(YAHOO_URL+query, headers=ua, proxies=prox, timeout=10)
+		r = get(YAHOO_URL+query, headers=ua, proxies=prox, timeout=10)
 		if r.status_code == 500:
 			print("Got blocked error!!")
 			return
@@ -160,7 +161,7 @@ def worker_yahoo(query, ua, prox):
 	if pages:
 		for page in pages:
 			try:
-				r = requests.get(page, headers=ua).text
+				r = get(page, headers=ua).text
 				parsing_yahoo(r, method='yahoo')
 			except:
 				continue
