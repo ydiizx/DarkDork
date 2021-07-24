@@ -1,1 +1,0 @@
-EMAIL: cean@bluegrass.net, HOST: mx2.bluegrass.net, PORT: 465, USER: cean@bluegrass.net, PASS: H2rry1

@@ -1,1 +1,0 @@
-EMAIL: valentecarlos@sbvglobal.net, HOST: mx01.sbvglobal.net, PORT: 587, USER: valentecarlos@sbvglobal.net, PASS: nascar88

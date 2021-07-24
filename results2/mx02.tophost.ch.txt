@@ -1,1 +1,0 @@
-EMAIL: natali.prochowski@evaluechains.com, HOST: mx02.tophost.ch, PORT: 465, USER: natali.prochowski, PASS: najobi06

@@ -1,1 +1,0 @@
-EMAIL: c3141as@copitima.com, HOST: spam01.hispaweb.net, PORT: 465, USER: c3141as@copitima.com, PASS: 220203

@@ -1,1 +1,0 @@
-EMAIL: donjon40@jubimail.dk, HOST: mx2.spamfilter.cc, PORT: 465, USER: donjon40@jubimail.dk, PASS: donse

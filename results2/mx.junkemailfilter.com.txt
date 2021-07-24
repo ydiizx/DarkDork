@@ -1,2 +1,0 @@
-EMAIL: Rweigel@accelgen.com, HOST: mx.junkemailfilter.com, PORT: 465, USER: Rweigel@accelgen.com, PASS: khwgenetiucs
-EMAIL: rcogswell@atsecure.net, HOST: mx.junkemailfilter.com, PORT: 465, USER: rcogswell@atsecure.net, PASS: luv4him

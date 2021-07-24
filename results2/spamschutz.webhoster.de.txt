@@ -1,1 +1,0 @@
-EMAIL: marco.heller@varsikin.de, HOST: spamschutz.webhoster.de, PORT: 465, USER: marco.heller@varsikin.de, PASS: xyfuhije

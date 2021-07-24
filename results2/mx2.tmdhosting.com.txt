@@ -1,1 +1,0 @@
-EMAIL: tony@redking.co.uk, HOST: mx2.tmdhosting.com, PORT: 465, USER: tony, PASS: ttesrod

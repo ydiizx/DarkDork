@@ -1,1 +1,0 @@
-EMAIL: sopan@bisleri.co.in, HOST: as2.qlc.co.in, PORT: 465, USER: sopan, PASS: 4c63977679f94dc8

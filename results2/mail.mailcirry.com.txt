@@ -1,1 +1,0 @@
-EMAIL: piccola@mailcirry.com, HOST: mail.mailcirry.com, PORT: 587, USER: piccola@mailcirry.com, PASS: galben123

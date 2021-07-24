@@ -1,1 +1,0 @@
-EMAIL: itsdaz@x-stream.co.uk, HOST: mail.x-stream.co.uk, PORT: 465, USER: itsdaz, PASS: 57nf5a8swq

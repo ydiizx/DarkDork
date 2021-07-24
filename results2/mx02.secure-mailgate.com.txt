@@ -1,1 +1,0 @@
-EMAIL: florian.frei@hinnerk.de, HOST: mx02.secure-mailgate.com, PORT: 465, USER: florian.frei@hinnerk.de, PASS: hinnerk

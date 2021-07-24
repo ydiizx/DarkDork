@@ -1,1 +1,0 @@
-EMAIL: elljemes@agristar.net, HOST: mx1-us.spamexperts.com, PORT: 587, USER: elljemes, PASS: lledj2

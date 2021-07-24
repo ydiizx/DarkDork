@@ -1,1 +1,0 @@
-EMAIL: anne.cowan@cybernaut.co.uk, HOST: mail.cybernaut.co.uk, PORT: 587, USER: anne.cowan, PASS: sammie

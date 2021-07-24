@@ -1,1 +1,0 @@
-EMAIL: joyway@htc.net, HOST: mail.htc.net, PORT: 465, USER: joyway@htc.net, PASS: 5475Mama

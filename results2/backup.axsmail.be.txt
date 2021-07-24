@@ -1,1 +1,0 @@
-EMAIL: twt@twt.be, HOST: backup.axsmail.be, PORT: 465, USER: twt@twt.be, PASS: ktqb6193

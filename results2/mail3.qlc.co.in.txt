@@ -1,7 +1,0 @@
-EMAIL: mk.firesystems@ctr.in, HOST: mail3.qlc.co.in, PORT: 465, USER: mk.firesystems, PASS: 2QKOCQJZ
-EMAIL: ajay@pvsimpex.co.in, HOST: mail3.qlc.co.in, PORT: 465, USER: ajay@pvsimpex.co.in, PASS: 2OE3N10Y7
-EMAIL: haswani@atulauto.co.in, HOST: mail3.qlc.co.in, PORT: 465, USER: haswani, PASS: indian@99
-EMAIL: dhanapal@tdps.co.in, HOST: mail3.qlc.co.in, PORT: 465, USER: dhanapal, PASS: dha@123
-EMAIL: sales@ainnovative.in, HOST: mail3.qlc.co.in, PORT: 465, USER: sales@ainnovative.in, PASS: waterjet1
-EMAIL: delhisales@tkpl.in, HOST: mail3.qlc.co.in, PORT: 465, USER: delhisales@tkpl.in, PASS: puvujujyp3451
-EMAIL: tellabsmumbai@telgroup.co.in, HOST: mail3.qlc.co.in, PORT: 465, USER: tellabsmumbai@telgroup.co.in, PASS: tellabs22

@@ -1,1 +1,0 @@
-EMAIL: finance@heathside.surrey.sch.uk, HOST: hsspam6.hostingsystems.co.uk, PORT: 465, USER: finance@heathside.surrey.sch.uk, PASS: heathside

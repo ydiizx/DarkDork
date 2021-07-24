@@ -1,3 +1,0 @@
-EMAIL: anfernee@damaja.co.uk, HOST: mx1.hostinguk.net, PORT: 465, USER: anfernee, PASS: playstn2k
-EMAIL: nick@bethel.org.uk, HOST: mx1.hostinguk.net, PORT: 465, USER: nick@bethel.org.uk, PASS: h1f1delity
-EMAIL: daz@kuffs.co.uk, HOST: mx1.hostinguk.net, PORT: 465, USER: daz@kuffs.co.uk, PASS: seven7

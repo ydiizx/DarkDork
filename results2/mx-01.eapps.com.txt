@@ -1,2 +1,0 @@
-EMAIL: jpracz@excellie.com, HOST: mx-01.eapps.com, PORT: 465, USER: jpracz@excellie.com, PASS: asaasa
-EMAIL: info@serviacero.com, HOST: mx-01.eapps.com, PORT: 465, USER: info@serviacero.com, PASS: Ic53404

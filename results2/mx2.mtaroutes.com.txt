@@ -1,5 +1,0 @@
-EMAIL: praxis.heiter@panchemie.de, HOST: mx2.mtaroutes.com, PORT: 587, USER: praxis.heiter@panchemie.de, PASS: summerjam
-EMAIL: JRozell@RozellInd.com, HOST: mx2.mtaroutes.com, PORT: 587, USER: JRozell, PASS: rozell
-EMAIL: colin@grassform.co.uk, HOST: mx2.mtaroutes.com, PORT: 587, USER: colin@grassform.co.uk, PASS: shirley
-EMAIL: service.commercial@evreux.net.bmw.fr, HOST: mx2.mtaroutes.com, PORT: 587, USER: service.commercial, PASS: louis
-EMAIL: m.bauernfeind@klepper-partner.de, HOST: mx2.mtaroutes.com, PORT: 587, USER: m.bauernfeind, PASS: ygumomyh

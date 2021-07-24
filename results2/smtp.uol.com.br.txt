@@ -1,2 +1,0 @@
-EMAIL: raoqchagas@uol.com.br, HOST: smtp.uol.com.br, PORT: 465, USER: raoqchagas@uol.com.br, PASS: chagao01
-EMAIL: danenri@uol.com.br, HOST: smtp.uol.com.br, PORT: 465, USER: danenri@uol.com.br, PASS: pote123

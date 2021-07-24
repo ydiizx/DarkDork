@@ -1,1 +1,0 @@
-EMAIL: ppestana@pinearq.com, HOST: mx20.profesionalhosting.com, PORT: 465, USER: ppestana@pinearq.com, PASS: 70373737

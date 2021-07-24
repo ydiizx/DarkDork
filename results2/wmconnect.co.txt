@@ -1,1 +1,0 @@
-EMAIL: cable282001@wmconnect.co, HOST: wmconnect.co, PORT: 587, USER: cable282001@wmconnect.co, PASS: 123456

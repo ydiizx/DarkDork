@@ -1,1 +1,0 @@
-EMAIL: byorn@pawpower.com.au, HOST: mx02.mailcluster.com.au, PORT: 465, USER: byorn@pawpower.com.au, PASS: zulubento 29

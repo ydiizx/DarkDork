@@ -1,1 +1,0 @@
-EMAIL: rachel@stephenson.co.uk, HOST: mx20.positive-internet.com, PORT: 465, USER: rachel@stephenson.co.uk, PASS: yyskygqrje

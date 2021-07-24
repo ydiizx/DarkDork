@@ -1,3 +1,0 @@
-EMAIL: ian@2fields.co.uk, HOST: mx2.spamfiltering.com, PORT: 465, USER: ian@2fields.co.uk, PASS: tardis
-EMAIL: n.davies@lintonchapel.co.uk, HOST: mx2.spamfiltering.com, PORT: 465, USER: n.davies@lintonchapel.co.uk, PASS: marlow0808
-EMAIL: dcw@mageye.co.uk, HOST: mx2.spamfiltering.com, PORT: 465, USER: dcw@mageye.co.uk, PASS: pottery

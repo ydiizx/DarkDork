@@ -1,1 +1,0 @@
-EMAIL: jacob.pope@virgin.net, HOST: smtp.virgin.net, PORT: 465, USER: jacob.pope@virgin.net, PASS: Stagman1

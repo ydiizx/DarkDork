@@ -1,1 +1,0 @@
-EMAIL: info@hotelmyriad.in, HOST: hotelmyriad.in, PORT: 465, USER: info, PASS: venue_144

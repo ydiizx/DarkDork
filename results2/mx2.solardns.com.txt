@@ -1,3 +1,0 @@
-EMAIL: liz@bowhouse.co.uk, HOST: mx2.solardns.com, PORT: 465, USER: liz, PASS: bowhouse
-EMAIL: nick.giles@neologism.co.uk, HOST: mx2.solardns.com, PORT: 465, USER: nick.giles@neologism.co.uk, PASS: id4ke5hy
-EMAIL: ebay@extant.co.uk, HOST: mx2.solardns.com, PORT: 465, USER: ebay@extant.co.uk, PASS: a7gbj8bn

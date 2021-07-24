@@ -1,1 +1,0 @@
-EMAIL: info@sarkfirca.com, HOST: mail.sarkfirca.com, PORT: 465, USER: info, PASS: 27081983

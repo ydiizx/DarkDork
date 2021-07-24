@@ -1,1 +1,0 @@
-EMAIL: jjs@kaliberltd.co.uk, HOST: mx1-eu.mtaroutes.com, PORT: 587, USER: jjs@kaliberltd.co.uk, PASS: lawrence

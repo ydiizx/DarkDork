@@ -1,1 +1,0 @@
-EMAIL: steve@yall.com, HOST: rs1.hostrocket.com, PORT: 465, USER: steve, PASS: %y4e3con

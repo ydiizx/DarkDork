@@ -1,1 +1,0 @@
-EMAIL: julio@inetsoft.com.br, HOST: inetsoft.inf.br, PORT: 465, USER: julio@inetsoft.com.br, PASS: hudson54

@@ -1,1 +1,0 @@
-EMAIL: pzepeda@ciberatacama.com, HOST: mail.ciberatacama.com, PORT: 465, USER: pzepeda, PASS: chachita

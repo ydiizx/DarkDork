@@ -1,1 +1,0 @@
-EMAIL: info@BUITENOM.com, HOST: mx1.mail-scanner.eu, PORT: 465, USER: info, PASS: ruim02

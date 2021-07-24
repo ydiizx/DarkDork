@@ -1,2 +1,0 @@
-EMAIL: tim@alicor.co.uk, HOST: mail2.filteredmx.net, PORT: 465, USER: tim@alicor.co.uk, PASS: f3piqt
-EMAIL: mel@impress-products.co.uk, HOST: mail2.filteredmx.net, PORT: 465, USER: mel, PASS: impress888

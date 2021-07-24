@@ -1,1 +1,0 @@
-EMAIL: sales@treehousehotels.in, HOST: one.mxroute.com, PORT: 465, USER: sales, PASS: treehouse01

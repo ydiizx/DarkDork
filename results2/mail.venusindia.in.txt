@@ -1,1 +1,0 @@
-EMAIL: rajnish@venusindia.in, HOST: mail.venusindia.in, PORT: 465, USER: rajnish, PASS: archna123

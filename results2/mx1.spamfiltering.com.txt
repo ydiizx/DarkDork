@@ -1,4 +1,0 @@
-EMAIL: bob_moore@fractalgarden.me.uk, HOST: mx1.spamfiltering.com, PORT: 465, USER: bob_moore@fractalgarden.me.uk, PASS: trebor59
-EMAIL: staff@celticcareservices.co.uk, HOST: mx1.spamfiltering.com, PORT: 465, USER: staff@celticcareservices.co.uk, PASS: haggistod96
-EMAIL: keith@rivalrate.co.uk, HOST: mx1.spamfiltering.com, PORT: 465, USER: keith@rivalrate.co.uk, PASS: madphb1ljvpsokolov
-EMAIL: ukwda@mid.co.uk, HOST: mx1.spamfiltering.com, PORT: 465, USER: ukwda@mid.co.uk, PASS: watson

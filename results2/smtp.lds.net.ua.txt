@@ -1,6 +1,0 @@
-EMAIL: yasen@lds.net.ua, HOST: smtp.lds.net.ua, PORT: 587, USER: yasen@lds.net.ua, PASS: eon849mp
-EMAIL: festivalnaya@lds.net.ua, HOST: smtp.lds.net.ua, PORT: 587, USER: festivalnaya@lds.net.ua, PASS: yzb380xs
-EMAIL: yulia@lds.net.ua, HOST: smtp.lds.net.ua, PORT: 587, USER: yulia@lds.net.ua, PASS: sfk357rr
-EMAIL: laykov@lds.net.ua, HOST: smtp.lds.net.ua, PORT: 587, USER: laykov@lds.net.ua, PASS: vetal21lavean10
-EMAIL: irunchik@lds.net.ua, HOST: smtp.lds.net.ua, PORT: 587, USER: irunchik@lds.net.ua, PASS: xra157gx
-EMAIL: lis123@lds.net.ua, HOST: smtp.lds.net.ua, PORT: 587, USER: lis123@lds.net.ua, PASS: lye643xy

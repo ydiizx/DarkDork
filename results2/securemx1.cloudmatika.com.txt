@@ -1,1 +1,0 @@
-EMAIL: hardiono@supraco.com, HOST: securemx1.cloudmatika.com, PORT: 465, USER: hardiono, PASS: 111273

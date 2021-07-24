@@ -1,5 +1,0 @@
-EMAIL: christian.spatz@helimail.de, HOST: mail-lp.helimail.de, PORT: 465, USER: christian.spatz, PASS: fzH393dC
-EMAIL: beaver@helimail.de, HOST: mail-lp.helimail.de, PORT: 465, USER: beaver, PASS: frank
-EMAIL: mstrunk@helimail.de, HOST: mail-lp.helimail.de, PORT: 465, USER: mstrunk, PASS: asrael
-EMAIL: h.schlotmann@helimail.de, HOST: mail-lp.helimail.de, PORT: 465, USER: h.schlotmann, PASS: 26633
-EMAIL: busskl@helimail.de, HOST: mail-lp.helimail.de, PORT: 465, USER: busskl, PASS: puste

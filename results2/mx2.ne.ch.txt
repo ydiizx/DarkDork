@@ -1,1 +1,0 @@
-EMAIL: florence.ribaux@ne.ch, HOST: mx2.ne.ch, PORT: 465, USER: florence.ribaux, PASS: cabocabo

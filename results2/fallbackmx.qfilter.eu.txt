@@ -1,1 +1,0 @@
-EMAIL: dvollbrecht@oceannet.de, HOST: fallbackmx.qfilter.eu, PORT: 465, USER: dvollbrecht@oceannet.de, PASS: oj5ti7oz

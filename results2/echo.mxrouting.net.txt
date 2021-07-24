@@ -1,1 +1,0 @@
-EMAIL: tatyana@barentsnova.com, HOST: echo.mxrouting.net, PORT: 465, USER: tatyana, PASS: vehvfycr

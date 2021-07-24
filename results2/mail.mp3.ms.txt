@@ -1,1 +1,0 @@
-EMAIL: giovan@mp3.ms, HOST: mail.mp3.ms, PORT: 465, USER: giovan, PASS: gramoun

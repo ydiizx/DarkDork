@@ -1,1 +1,0 @@
-EMAIL: info@intval.com, HOST: antispam2.cirrushosting.com, PORT: 465, USER: info, PASS: intval

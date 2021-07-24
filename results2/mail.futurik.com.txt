@@ -1,1 +1,0 @@
-EMAIL: contact@futurik.com, HOST: mail.futurik.com, PORT: 465, USER: contact, PASS: contact@fu123

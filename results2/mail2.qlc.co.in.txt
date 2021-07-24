@@ -1,6 +1,0 @@
-EMAIL: enterprise@qlc.in, HOST: mail2.qlc.co.in, PORT: 465, USER: enterprise@qlc.in, PASS: safex222
-EMAIL: dkum@smcindia.in, HOST: mail2.qlc.co.in, PORT: 465, USER: dkum@smcindia.in, PASS: dk@123
-EMAIL: mehta@concepteng.co.in, HOST: mail2.qlc.co.in, PORT: 465, USER: mehta@concepteng.co.in, PASS: HEMA1234
-EMAIL: samir@pureuse.com, HOST: mail2.qlc.co.in, PORT: 465, USER: samir@pureuse.com, PASS: windinind
-EMAIL: harishgupta@asbsystems.co.in, HOST: mail2.qlc.co.in, PORT: 465, USER: harishgupta@asbsystems.co.in, PASS: pass@123
-EMAIL: shobhana.s@accutech.in, HOST: mail2.qlc.co.in, PORT: 465, USER: shobhana.s, PASS: love0716

@@ -1,1 +1,0 @@
-EMAIL: qbauam@yemen.net.ye, HOST: mail.yemen.net.ye, PORT: 465, USER: qbauam@yemen.net.ye, PASS: 01264355

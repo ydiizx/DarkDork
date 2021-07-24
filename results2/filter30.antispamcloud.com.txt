@@ -1,2 +1,0 @@
-EMAIL: zahn@m-on.de, HOST: filter30.antispamcloud.com, PORT: 587, USER: zahn@m-on.de, PASS: 83h2huzdgy
-EMAIL: pawan@mkprecision.in, HOST: filter30.antispamcloud.com, PORT: 587, USER: pawan@mkprecision.in, PASS: m3mdg3e7d

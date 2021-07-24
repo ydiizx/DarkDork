@@ -1,1 +1,0 @@
-EMAIL: faybi1987@sde.de, HOST: mx4.mailsense2net.de, PORT: 465, USER: faybi1987, PASS: 28124194

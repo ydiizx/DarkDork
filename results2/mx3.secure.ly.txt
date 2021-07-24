@@ -1,1 +1,0 @@
-EMAIL: ehab@assaker.com.ly, HOST: mx3.secure.ly, PORT: 465, USER: ehab@assaker.com.ly, PASS: migrosmigros

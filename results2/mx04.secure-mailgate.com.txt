@@ -1,2 +1,0 @@
-EMAIL: j.hoelzl@hswm.de, HOST: mx04.secure-mailgate.com, PORT: 465, USER: j.hoelzl@hswm.de, PASS: Hermann
-EMAIL: leuf@vanderburgt.de, HOST: mx04.secure-mailgate.com, PORT: 465, USER: leuf@vanderburgt.de, PASS: IgBEiAnAnY

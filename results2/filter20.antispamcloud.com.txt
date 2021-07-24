@@ -1,1 +1,0 @@
-EMAIL: Bernadette.Bos@pluspoint.com, HOST: filter20.antispamcloud.com, PORT: 587, USER: Bernadette.Bos@pluspoint.com, PASS: welkom

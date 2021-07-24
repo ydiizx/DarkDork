@@ -1,1 +1,0 @@
-EMAIL: mirceapop@chemarkrom.ro, HOST: cloudmail03.clausweb.ro, PORT: 465, USER: mirceapop@chemarkrom.ro, PASS: 197012

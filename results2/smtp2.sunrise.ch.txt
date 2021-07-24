@@ -1,1 +1,0 @@
-EMAIL: gabriella.a@sunrise.ch, HOST: smtp2.sunrise.ch, PORT: 465, USER: gabriella.a@sunrise.ch, PASS: lella_511

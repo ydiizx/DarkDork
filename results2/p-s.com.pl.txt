@@ -1,1 +1,0 @@
-EMAIL: webmaster@p-s.com.pl, HOST: p-s.com.pl, PORT: 465, USER: webmaster, PASS: pippen

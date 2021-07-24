@@ -1,1 +1,0 @@
-EMAIL: bangthemonkey12@sbaglobal.net, HOST: mail.sbaglobal.net, PORT: 587, USER: bangthemonkey12@sbaglobal.net, PASS: 115

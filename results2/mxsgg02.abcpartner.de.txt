@@ -1,1 +1,0 @@
-EMAIL: susanne.puetz-hebel@hautzel.fsoc.de, HOST: mxsgg02.abcpartner.de, PORT: 465, USER: susanne.puetz-hebel@hautzel.fsoc.de, PASS: susi2606

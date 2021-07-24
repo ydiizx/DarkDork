@@ -1,1 +1,0 @@
-EMAIL: sector@netzidiot.de, HOST: mx6.aftermarket.hosting, PORT: 465, USER: sector, PASS: forex1

@@ -1,1 +1,0 @@
-EMAIL: johan@labmasster.be, HOST: mailfilter.hostnet.nl, PORT: 587, USER: johan@labmasster.be, PASS: Domin8or1

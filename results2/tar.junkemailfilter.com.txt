@@ -1,1 +1,0 @@
-EMAIL: tracy@safariservices.com.zm, HOST: tar.junkemailfilter.com, PORT: 465, USER: tracy@safariservices.com.zm, PASS: 419488514481164

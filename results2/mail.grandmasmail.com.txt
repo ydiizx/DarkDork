@@ -1,1 +1,0 @@
-EMAIL: xcfylx@grandmasmail.com, HOST: mail.grandmasmail.com, PORT: 587, USER: xcfylx@grandmasmail.com, PASS: teledmeno

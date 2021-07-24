@@ -1,8 +1,0 @@
-EMAIL: sales@zynna.in, HOST: mail1.qlc.co.in, PORT: 465, USER: sales, PASS: zynna1
-EMAIL: anjani.t@accutech.co.in, HOST: mail1.qlc.co.in, PORT: 465, USER: anjani.t, PASS: anjani31
-EMAIL: vishnu.pandey@excelgroup.in, HOST: mail1.qlc.co.in, PORT: 465, USER: vishnu.pandey@excelgroup.in, PASS: kamlesh_01
-EMAIL: manjay.singh@hdil.in, HOST: mail1.qlc.co.in, PORT: 465, USER: manjay.singh@hdil.in, PASS: manjay123
-EMAIL: narayan.tonape@kpt.co.in, HOST: mail1.qlc.co.in, PORT: 465, USER: narayan.tonape@kpt.co.in, PASS: nikhil1966
-EMAIL: info@nagchampa.co.in, HOST: mail1.qlc.co.in, PORT: 465, USER: info@nagchampa.co.in, PASS: shrinivassugandhalaya01
-EMAIL: mihir.gogte@rapidmach.com, HOST: mail1.qlc.co.in, PORT: 465, USER: mihir.gogte, PASS: SGMY2012
-EMAIL: sureshkumar@botree.co.in, HOST: mail1.qlc.co.in, PORT: 465, USER: sureshkumar@botree.co.in, PASS: 0xzrYX

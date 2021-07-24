@@ -1,1 +1,0 @@
-EMAIL: colin@semannslattery.com, HOST: mx01.mailcluster.com.au, PORT: 465, USER: colin@semannslattery.com, PASS: IvY2506i

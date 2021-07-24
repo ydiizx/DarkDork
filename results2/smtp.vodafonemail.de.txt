@@ -1,1 +1,0 @@
-EMAIL: o-jandt@vodafone.de, HOST: smtp.vodafonemail.de, PORT: 587, USER: o-jandt, PASS: 26682668
