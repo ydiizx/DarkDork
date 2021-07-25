@@ -35,8 +35,7 @@ clear = "clear" if name == "posix" else "cls"
 def display():
 	system(clear)
 	print("DORK USAGE : ", dork_usage, "/", total_dork)
-	print("VALID YAHOO: ", valid)
-	print("VALID BING: ", valid_bing)
+	print("VALID : ", valid)
 	print("FAILED : ", errors)
 	print("VALID TRASH : ", valid_trash)
 
@@ -44,7 +43,7 @@ def load_prox(ids, proxy_chains=True):
 	global q_proxy
 	print("Reloading on ", ids)
 	if proxy_chains:
-		temp_proxy = dict(http="socks5://127.0.0.1:9050", https="socks5://127.0.0.1:9050")
+		temp_proxy = dict(http="socks5://127.0.0.1:9050", https="socks5://127.0.0.1:9050") # add tor proxy
 		for p_type in prox_type:
 			for x in requests.get(PROXYLINK % (p_type, "7000"), proxies=temp_proxy).text.split(): q_proxy.put_nowait(dict(http=p_type+"://"+x, https=p_type+"://"+x))
 	else:
@@ -101,11 +100,11 @@ class Worker(threading.Thread):
 			ua = {'User-Agents': choice(USER_AGENTS)}
 			a = None
 			while not a:
-				a = self.worker(t, ua, prox)
+				a = self.yahoo(t, ua, prox)
 				if a == None:
 					errors += 1
 					try:
-						prox = q_proxy.get(timeout=2)
+						a = q_proxy.get(timeout=2)
 					except queue.Empty:
 						break
 			display()
@@ -119,7 +118,7 @@ def check_link(link):
 def load_file(file_in, return_queue=False):
 	global total_dork
 	f = open(file_in, 'r', encoding='utf-8', errors='surrogateescape')
-
+	
 	if return_queue:
 		q = queue.Queue()
 		for x in f.readlines():
@@ -132,65 +131,40 @@ def load_file(file_in, return_queue=False):
 	f.close()
 	return q
 
-def worker(query, ua, prox):
+def worker_yahoo(query, ua, prox):
 	pages = None
 	r = None
 	try:
-		r = requests.get(YAHOO_URL+query, headers=ua, proxies=prox, timeout=8)
-		r2 = requests.get(BING_URL+query, headers=ua, proxies=prox, timeout=8)
+		r = requests.get(YAHOO_URL+query, headers=ua, proxies=prox, timeout=10)
 		if r.status_code == 500:
 			print("Got blocked error!!")
 			return
-		elif r2.status_code == 500 and r2.status_code != 500:
-			pass
-		elif r2.status_code != 500 and r2.status_code == 500:
-			pass
-		else:
-			return
+
 	except Exception as e:
+		# print(e)
 		return None
+		# continue
 	except requests.exceptions.RequestException:
 		return None
 	except requests.exceptions.ConnectionError:
 		return
-	if not r and not r2:
+
+	if not r:
 		return
-	elif not r and r2:
-		pass
-	elif r and not r2:
-		pass
-	else:
-		return
+	
 	try:
 		pages = parsing(r.text, first=True, method='yahoo')
-		pages2 = parsing(r2.text, first=True, method="bing")
 	except Exception as e:
 		print("Error from worker yahoo:", e)
-	if pages or pages2:
-		temp = {"yahoo":pages, "bing":pages2}
-		for page in temp:
-			for pg in temp[page]:
-				try:
-					r = requests.get(pg, headers=ua).text
-					parsing(r, method=page)
-				except:
-					continue
-	return 1
 
-def writer(link):
-	#global file_out
-	#global file_out_trash
-	if check_link(link):
-		return None
-	if urlparse(link).query:
-		f = open(file_out, 'a')
-		f.write(link)
-		valid += 1
-	else:
-		f = open(file_out_trash, 'a')
-		f.write(link)
-		valid_trash += 1
-	f.close()
+	if pages:
+		for page in pages:
+			try:
+				r = requests.get(page, headers=ua).text
+				parsing_yahoo(r, method='yahoo')
+			except:
+				continue
+	return 1
 
 def parsing(resp=None, first=False, method=None):
 	global valid_trash
@@ -198,30 +172,78 @@ def parsing(resp=None, first=False, method=None):
 
 	pages = None
 	soup = BeautifulSoup(resp, 'html.parser')
-
+	
 	if method == "yahoo":
 		hrefs = soup.find_all('a', attrs={'class': 'ac-algo'})
 		if first:
 			try:
 				pages = [x.attrs['href'] for x in soup.find('div', attrs={'class': 'pages'}).find_all('a')]
 			except Exception as e:
+				
+				# print(" error method yahoo:", e)
 				pass
+		for link in hrefs:
+			link = link.attrs['href']
+			if check_link(link):
+				continue
+			# print("From yahoo => ")
+			if urlparse(link).query:
+				f = open(file_out, 'a')
+				valid += 1
+			else:
+				f = open(file_out_trash, 'a')
+				valid_trash += 1
+			
+			f.write(link+'\n')
+			f.close()
+
+		return None
 	elif method == "bing":
 		if "There are no results for" in resp:
 			return None
-		
-		hrefs = soup.findAll('cite')
+
+		cite = soup.findAll('cite')
+		if len(cite) >=4:
+			for x in cite:
+				try:
+					if check_link(x):
+						continue
+					print("From bing =>", x.text)
+					f = open(file_out, 'a')
+					f.write(x.text+'\n')
+					f.close()
+				except Exception as e:
+					print(e)
+					continue
 		if first:
 			pages = soup.findAll('a', attrs={'class': 'b_widePage sb_bp'})
+			print(pages)
 			if pages:
 				pages = [x.attrs['href'] for x in pages]
-	
-	for link in hrefs:
-		link = link.attrs['href'] if method == "yahoo" else link
-		writer(link)
-		
+
 	if pages:
 		return pages
+
+def worker_bing(query, ua):
+	bing_url = BING_URL + query
+	next_page = None
+	try:
+		r = requests.get(bing_url, headers=ua)
+		if r.status_code == 500:
+			print("Gots blocked from bing...")
+			return
+		next_page = parsing(r.text, first=True, method="bing")
+	except Exception as e:
+		print("BIng Error => ", e)
+	if next_page:
+		for i in next_page:
+			try:
+				r = requests.get(bing_url+i, headers=ua)
+				if r.status_code == 500:
+					print("Gots blocked from bing...")
+					return
+				parsing(r.text, method="bing")
+			except Exception as e: print("Bing Error 2 => ", e)
 
 def dork_searcher(file_in, threads):
 	q = load_file(file_in, return_queue=True)
